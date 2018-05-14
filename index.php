@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<!--<h2><?php echo get_bloginfo( 'description' ); ?></h2> -->
-
 <?php
 if( get_field('services')){
  $services = get_field('services');
@@ -27,11 +25,8 @@ if( get_field('advanced_package_text')){
  $advancedpackagetext = get_field('advanced_package_text');
 }?>
 
-
-
 <div class="container">
-
-      <h1 class="my-4">Services</h1>
+      <h2 class="my-4">Services</h2>
 
       <!-- Marketing Icons Section -->
       <div class="row">
@@ -97,18 +92,17 @@ if( get_field('advanced_package_text')){
       <!-- Features Section -->
       <div class="row">
         <div class="col-lg-6">
-          <h2>Modern Business Features</h2>
-          <p>The Modern Business template by Start Bootstrap includes:</p>
+          <h2>Currently booking appointments</h2>
+          <p>Jonny Be Good Dog Training currently offers training in the following cities:</p>
           <ul>
             <li>
-              <strong>Bootstrap v4</strong>
+              <strong>Phoenix, Arizona</strong>
             </li>
-            <li>jQuery</li>
-            <li>Font Awesome</li>
-            <li>Working contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
+            <li>Tempe, Arizona</li>
+            <li>Tucson, Arizona</li>
+            <li>Mesa, Arizona</li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+          <p>Please contact us for questions regarding training, boarding, or custom training plans. We serve the entire Phoenix area within a 100 miles radius. </p>
         </div>
         <div class="col-lg-6">
           <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
@@ -116,12 +110,25 @@ if( get_field('advanced_package_text')){
       </div>
       <!-- /.row -->
 
+      
+      <div class="row">
+        <div class="col-lg-12 mb-4">
+        <h2 class="my-4">Testimonials</h2>
+        </div>
+      </div>
+
+
       <hr>
 
       <!-- Call to Action Section -->
       <div class="row mb-4">
         <div class="col-md-8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+          <p>Follow @JonnyBeGoodDogTraining on social media</p>
+          <p>
+          <a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+          <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-2x fa-youtube-square"></i></a>
+          </p>
         </div>
         <div class="col-md-4">
           <a class="btn btn-lg btn-secondary btn-block btn-danger" href="#">Book a FREE demo</a>
