@@ -43,9 +43,9 @@ if( get_field('advanced_package_text')){
               
               <?php echo $services;?>
               </div>
-            <div class="card-footer">
+            <!--<div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>
@@ -63,6 +63,7 @@ if( get_field('advanced_package_text')){
                 <a href="#">Basic Package</a>
               </h4>
               <p class="card-text"><?php echo $basicpackagetext;?></p>
+              <button type="button" class="btn btn-primary">Learn more</button>
             </div>
           </div>
         </div>
@@ -74,6 +75,7 @@ if( get_field('advanced_package_text')){
                 <a href="#">Minor Package</a>
               </h4>
               <p class="card-text"><?php echo $minorpackagetext;?></p>
+              <button type="button" class="btn btn-primary">Learn more</button>
             </div>
           </div>
         </div>
@@ -85,6 +87,7 @@ if( get_field('advanced_package_text')){
                 <a href="#">Advanced Package</a>
               </h4>
               <p class="card-text"><?php echo $advancedpackagetext;?></p>
+              <button type="button" class="btn btn-primary">Learn more</button>
             </div>
           </div>
         </div>
