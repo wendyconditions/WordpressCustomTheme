@@ -17,4 +17,12 @@ function theme_js() {
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js');
+
 ?>
+
+<?php
+              if( get_field('services')){
+                $services = get_field('services');
+              }?>
+
+

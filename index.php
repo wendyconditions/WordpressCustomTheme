@@ -2,6 +2,32 @@
 
 <!--<h2><?php echo get_bloginfo( 'description' ); ?></h2> -->
 
+<?php
+if( get_field('services')){
+ $services = get_field('services');
+}?>
+
+<?php
+if( get_field('title_of_service')){
+ $titleofservice = get_field('title_of_service');
+}?>
+
+<?php
+if( get_field('basic_package_text')){
+ $basicpackagetext = get_field('basic_package_text');
+}?>
+
+<?php
+if( get_field('minor_package_text')){
+ $minorpackagetext = get_field('minor_package_text');
+}?>
+
+<?php
+if( get_field('advanced_package_text')){
+ $advancedpackagetext = get_field('advanced_package_text');
+}?>
+
+
 
 <div class="container">
 
@@ -11,12 +37,12 @@
       <div class="row">
         <div class="col-lg-12 mb-4">
           <div class="card">
-            <h4 class="card-header">Remote E-collar Training</h4>
+            <h4 class="card-header"><?php echo $titleofservice;?></h4>
             <div class="card-body">
-              <p class="card-text">I strongly believe every dog has an opportunity to find a home. The difficulties is understanding how to effectively communicate with your pup without suppressing it's spirit. There's hundreds of training methods available. All with various approaches and/or techniques. I for one believe the remote e-collar method effectively bridges the communication gap between all members in your household and your pup(s). When used correctly, your pup begins to acknowledge the behavior pattern associated with the command word, and in a few months, the collar begins to fade away. Your pup is now trustworthy with or without their leash being present.</p>
-<p>The remote e-collar is basically an attention getter when distractions (triggers) are present. Once you train around your pups triggers, your walks/runs/hikes suddenly become incredibly pleasant. 
-Most people will have something negative to say about the remote e-collar. Truthfully, try it before casting judgement. It's a FREE demo. If you don't see results within your demo, no harm done. If trainers are charging you before you meet them; that should be a red flag. I'm always up for a challenge. </p>
-            </div>
+              <p class="card-text">
+              
+              <?php echo $services;?>
+              </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
@@ -26,72 +52,39 @@ Most people will have something negative to say about the remote e-collar. Truth
       <!-- /.row -->
 
       <!-- Portfolio Section -->
-      <h2>Portfolio Heading</h2>
+      <h2>Dog Training Packages</h2>
 
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
+          <div class="card h-75">
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="#">Basic Package</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text"><?php echo $basicpackagetext;?></p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
+          <div class="card h-75">
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#">Minor Package</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text"><?php echo $minorpackagetext;?></p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
+          <div class="card h-75">
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="#">Advanced Package</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Four</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+              <p class="card-text"><?php echo $advancedpackagetext;?></p>
             </div>
           </div>
         </div>
