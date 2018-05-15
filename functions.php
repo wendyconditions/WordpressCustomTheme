@@ -18,5 +18,22 @@ function theme_js() {
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js');
+
+function mytheme_widgets_init() {	
+    register_sidebar( array(
+        'name'          => __( 'Testimonial Widgets', 'textdomain' ),
+        'id'            => 'wendy-testimonial-widgets',
+        'description'   => __( 'Widgets in this area will be shown under testimonials.', 'textdomain' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
+    ) );
+}
+add_action( 'widgets_init', 'mytheme_widgets_init' );
 ?>
+
+
+
+
 
